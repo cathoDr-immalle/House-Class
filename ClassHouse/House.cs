@@ -17,7 +17,7 @@ namespace ClassHouse
 
         public void ShowData()
         {
-            Console.WriteLine("Ik ben een huis met {0} m² als oppervlakte", Area);
+            Console.WriteLine("Mijn huis heeft {0} m² als oppervlakte", Area);
         }
 
         
