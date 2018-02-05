@@ -5,9 +5,11 @@ using System.Text;
 
 namespace ClassHouse
 {
-    class Program
+    class Door
     {
-        static void Main(string[] args)
+        public string Color { get; set; }
+
+        public void ShowData()
         {
 
         }
