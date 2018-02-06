@@ -8,7 +8,7 @@ namespace ClassHouse
     class Person
     {
         private string naam;
-        public House house { get; set; }
+        public House House { get; set; }
 
         public Person(string naam)
         {
@@ -18,6 +18,8 @@ namespace ClassHouse
         public void ShowData()
         {
             Console.WriteLine("Mijn naam is {0}.", naam);
+            Console.WriteLine("En hier is wat info over mijn huis:");
+            House.ShowData();
         }
     }
 }

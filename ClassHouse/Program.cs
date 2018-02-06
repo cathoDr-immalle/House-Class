@@ -9,14 +9,21 @@ namespace ClassHouse
     {
         static void Main(string[] args)
         {
-            Person jefke = new Person("Jefke");
-            House huis = new House(50);
             Door deur = new Door();
-
-            jefke.ShowData();
-            huis.ShowData();
-            deur.ShowData("bruine");
+            House huis = new House(50);
+            Person joske = new Person("Joske");
             
+            deur.Color = "Blauw";
+            deur.ShowData();
+
+            Console.WriteLine("");
+            huis.Frontdoor = deur;
+            huis.ShowData();
+
+            Console.WriteLine("");
+            joske.House = huis;
+            joske.ShowData();
+
         }
     }
 }

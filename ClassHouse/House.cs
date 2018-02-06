@@ -7,17 +7,19 @@ namespace ClassHouse
 {
     class House
     {
-        private int Area { get; set; }
-        private Door Frontdoor { get; }
+        public int Area { get; set; }
+        public Door Frontdoor { get; set; }
 
-        public House(int Area)
+        public House(int area)
         {
-            this.Area = Area;
+            this.Area = area;
         }
 
         public void ShowData()
         {
             Console.WriteLine("Mijn huis heeft {0} m² als oppervlakte", Area);
+            Console.WriteLine("En hier is wat info over mijn Voordeur:");
+            Frontdoor.ShowData();
         }
 
         
